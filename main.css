@@ -1,0 +1,118 @@
+.operator {
+  color: rgb(145, 0, 11);
+}
+.variable {
+  color: rgb(106, 204, 195);
+}
+.value {
+  color: rgb(255, 0, 0);
+}
+.comment {
+  color: rgb(212, 49, 190);
+}
+.normal-link {
+  color: rgb(26, 96, 232);
+  text-decoration: none;
+}
+.function-name {
+  color: rgb(12, 172, 47);
+}
+.var {
+  color: rgb(154, 45, 157);
+}
+.return {
+  color: rgb(6, 107, 164);
+}
+.function {
+  color: rgb(194, 98, 57);
+}
+.code {
+  color: black;
+  background-color: rgb(222, 222, 222);
+  border-width: 3px;
+  border-color: black;
+  font-family: PTF;
+  padding: 5px;
+}
+.tab {
+  margin-left: 40px;
+}
+.main-body {
+  font-family: PTF;
+  color: white;
+  position: absolute;
+  top: 100px;
+  background-color: rgb(70, 77, 75);
+  padding: 10px;
+  border-radius: 6px;
+}
+.button-text {
+  padding: 10px;
+}
+.center-title {
+  position: absolute;
+  top: 10px;
+  left: inherit;
+  font-family: Pacifico;
+  color: grey;
+}
+@font-face {
+    font-family: PTF;
+    src: url(PTM55FT.ttf);
+}
+@font-face {
+    font-family: Pacifico;
+    src: url(Pacifico.ttf);
+}
+@font-face {
+    font-family: Orbitron;
+    src: url(Orbitron-Regular.ttf);
+}
+.normal-text {
+  font-family: Pacifico;
+  color: grey;
+}
+body{
+  padding: 10px;
+}
+.underline-off{
+  text-decoration: none;
+}
+.pull-left{
+  position: absolute;
+  top: 10px;
+  text-align: left;
+}
+.spaced-button{
+  /*padding-left: 10px*/
+}
+.pull-right {
+  margin: 10px;
+  text-align: right;
+}
+.center-page{
+  vertical-align: middle;
+  align-items: center;
+}
+/*code for the button*/
+.animated-button{
+  padding: 6px 12px;
+  vertical-align: middle;
+  font-family: Pacifico;
+  margin-bottom: 25px;
+  font-size: 15;
+  background-image: linear-gradient(to top, rgb(126, 126, 112) 50%, rgb(102, 111, 105) 50%);
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 5px solid rgb(126, 126, 112);
+  box-shadow: 0px 0px 0px 0px  inset;
+  background-size: 100% 200%;
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
+}
+/*button hover behavior*/
+.animated-button:hover{
+  background-position: 0 100%;
+}
