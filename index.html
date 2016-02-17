@@ -1,22 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Saguaro Code Club</title>
+  <head>
+    <title>Saguaro Code Club</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href = "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
 </head>
 <link rel="stylesheet" type="text/css" href="main.css">
 <body>
-  <center><h1 class = "center-title">Saguaro Code Club</h1></center>
-    <div align="right" class = "button-text">
-      <a href = "index.html" class="animated-button">About Us</a>
-      <a href = "notes.html" class="animated-button">Notes</a>
-      <a href = "contribute.html" class="animated-button">Contribute</a>
+  <nav id = "home" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">&ltCODE&gt</a>
     </div>
-  <div class = "main-body">
-    <h2>About Us</h2>
-    Saguaro's Coding Club is dedicated to teaching the students attending Saguaro High School about computer science. The club currently has an
-     undefined schedule, but tends to meet during lunch in Mr. Bonert's room here on the Saguaro campus. To join the club, please email the administrators
-      at saguarocode@gmail.com.
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="https://github.com/saguarocodeclub">Github<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Contribute</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notes<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#helloworld">Hello World</a></li>
+            <li><a href="#comments">Comments</a></li>
+            <li><a href="#vars">Variables</a></li>
+            <li><a href="#functions">Functions</a></li>
+            <li><a href="#operators">Operators</a></li>
+            <li><a href="#statements">Statements</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 style = "font-family: Pacifico;">Saguaro Code Club</h1>
+    </div>
+  </div>
+  <div class = "container">
+    <h1 id="helloworld">Hello World</h1>
+    As convention dictates, we begin learning a new language with the hello world program. The program accomplishes one thing: prints "Hello World" to the screen.
+    Good for python, the process of doing this is very simple.<br><br>
+    <pre>
+      <code><span class="f">print</span>(<span class="val">"Hello World"</span>)</code></pre>
+  </div>
+  <div class = "container">
+    <h1 id="comments">Comments</h1>
+    A comment is a group of text in the code that acts as a note, or comment, to other programmers or yourself. Comments act as an explanation for complex code.
+    There are two types of comments, one that lasts on a single line, and one that acts as a multiline comment. Single line comments are initialized by a "#",
+    and multiline comments are initiated by "###" and ended by "###"<br><br>
+    <pre>
+  <code><span class="c"># this is a single line comment</span>
+
+  <span class="c">### this
+  comment
+  has
+  multiple
+  lines
+  ###</span></code></pre>
+  <br>
+  The program's output is as follows:<br><br>
+  <pre>
+    <code>Hello World</code></pre>
+  </div>
+  <div class = "container">
+    <h1 id="vars">Variables</h1>
+    In python, variables work in an intuitive way. To assign a variable, you define the variable name, and set it equal to its value.
+    <br><br>
+    <pre>
+      <code><span class="v">x</span> = <span class="val">5</span> <span class="c"># now we can referance x as 5</span>
+      <span class="f">print</span>(<span class="v">x</span>) <span class="c"># prints the value of x: 5</span>
+      <span class="v">x</span> = <span class="val">17</span>
+      <span class="f">print</span>(<span class="v">x</span>) <span class="c"># prints the value of x: 17</span></code></pre>
+    The code above will output the following:<br><br>
+    <pre>
+      <code>5
+      17</code></pre>
+  </div>
+  <div class = "container">
+    <h1 id = functions>Basic Functions</h1>
+    Functions are like those in algebra. You can think of them as an input output system the input is called an argument, and the function
+    outputs an variable. A function is defined with the keyword "def" followed by the function name and parenthesis with the argument inside.
+    The function body begins after a colon. The body can hold something called a return value. The return value is the output of the function.
+    <br><br>
+    <pre>
+      <code><span class="e">def</span> <span class="f">f</span>(<span class="v">x</span>):
+        <span class="e">return</span> <span class="v">x</span> + 1</code></pre>
+    You can set the return value of the function to a variable like so:
+    <br><br>
+    <pre>
+      <code><span class="v">myVar</span> = <span class="f">f</span>(<span class="val">11</span>)
+      <span class="f">print</span>(<span class="v">myVar</span>)</code></pre>
+      The program's output is as follows:
+      <pre>
+        <code>12</code></pre>
   </div>
 </body>
 </html>
